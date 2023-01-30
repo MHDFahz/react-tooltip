@@ -22,12 +22,14 @@
     "url": "https://github.com/MHDFahz/react-tooltip/issues"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist/"
   ],
   "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "author": "Muhammed Fahis",
   "license": "MIT",
   "devDependencies": {
