@@ -1,0 +1,138 @@
+#tooltip {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: var(--fontSize);
+  z-index: 1000000000;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  -webkit-animation: fade var(--animationDuration)
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: fade var(--animationDuration) cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+}
+
+#tooltip.right {
+  margin-left: 5px;
+}
+#tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: auto;
+  margin-left: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: var(--backgroundColor);
+}
+
+#tooltip.left {
+  margin-left: -5px;
+}
+#tooltip.left .tooltip-arrow {
+  top: 50%;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: var(--backgroundColor);
+  right: -5px;
+  left: auto;
+}
+
+#tooltip.top {
+  margin-top: -5px;
+}
+#tooltip.top .tooltip-arrow {
+  top: auto;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: var(--backgroundColor);
+}
+
+#tooltip.bottom {
+  margin-top: 5px;
+}
+#tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: var(--backgroundColor);
+}
+
+#tooltip .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: var(--backgroundColor);
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-right-color: transparent;
+  border-style: solid;
+}
+
+#tooltip .tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: var(--color);
+  text-align: center;
+  background-color: var(--backgroundColor);
+  border-radius: 4px;
+}
+#tooltip .tooltip-inner .tooltip-list {
+  max-width: 200px;
+  padding: 3px 8px;
+  font-size: var(--fontSize);
+  overflow: auto;
+  text-align: left;
+  text-transform: capitalize;
+  list-style-type: disc;
+}
+#tooltip .tooltip-inner .tooltip-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#tooltip.on {
+  display: block;
+}
+#tooltip.off {
+  display: none;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
