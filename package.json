@@ -15,11 +15,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fahism/tooltip-react.git"
+    "url": "https://github.com/MHDFahz/react-tooltip.git"
   },
-  "homepage": "https://github.com/fahism/tooltip-react",
+  "homepage": "https://github.com/MHDFahz/react-tooltip",
   "bugs": {
-    "url": "https://github.com/fahism/tooltip-react/issues"
+    "url": "https://github.com/MHDFahz/react-tooltip/issues"
   },
   "publishConfig": {
     "access": "public"
