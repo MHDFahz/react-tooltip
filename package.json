@@ -1,9 +1,10 @@
 {
-  "name": "tooltip-react",
-  "version": "1.0.0",
+  "name": "fhz-tooltip",
+  "version": "1.0.1",
   "description": "A React component for creating tooltips",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-lib": "rollup -c"
@@ -22,15 +23,14 @@
     "url": "https://github.com/MHDFahz/react-tooltip/issues"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "files": [
     "dist/"
   ],
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
-  "author": "Muhammed Fahis",
+  "author": "fahis369",
   "license": "MIT",
   "devDependencies": {
     "react": "^17.0.1",
