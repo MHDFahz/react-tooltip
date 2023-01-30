@@ -28,7 +28,7 @@ export default [
       }),
       external(),
       resolve(),
-      terser(),
+      // terser(),
     ],
   },
 ];

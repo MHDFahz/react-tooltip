@@ -70,8 +70,8 @@ var PropTypes = require("prop-types");
  * A tooltip component that can be positioned relative to its parent element.
  * @param {ToolTipProps} props - The component's props.
  * @param {ToolTipRef} ref - A reference to the component's DOM node.
- * @author Fahis <muhammadfahis.shareef@agilisium.com>
- * @version 1.0.0
+ * @author Fahis <fahis.skazi@gmail.com>
+ * @version 1.0.8
  */
 const ToolTip = /*#__PURE__*/ React.forwardRef((props, ref) => {
   const [show, setShow] = React.useState(false);
@@ -541,3 +541,4 @@ ToolTip.defaultProps = {
   autoClose: true,
 };
 ToolTip.displayName = "ToolTip";
+export default ToolTip;
