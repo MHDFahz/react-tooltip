@@ -4,7 +4,7 @@ A tooltip component that can be positioned relative to its parent element.
 
 ## Author
 
-[![Author](https://img.shields.io/badge/Author-Fahis-blue)](muhammadfahis.shareef@agilisium.com)
+[![Author](https://img.shields.io/badge/Author-Fahis-blue)](fahis.skazi@gmail.com)
 
 ## Version
 
